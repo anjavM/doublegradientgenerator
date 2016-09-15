@@ -297,25 +297,6 @@ input[type=radio]:checked + .label-text:before {
     }
 }
 
-input[type=checkbox] {
-    display: none;
-}
-
-input[type=checkbox] + .label-text:before {
-    content: "\f096";
-    font-family: "FontAwesome";
-    font-weight: 100;
-    -webkit-font-smoothing: antialiased;
-    width: 1em;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-input[type=checkbox]:checked + .label-text:before {
-    content: "\f14a";
-    animation: check 250ms ease-in;
-}
-
 section.copycode {
     background-color: white;
     margin: 0 auto;
@@ -448,6 +429,16 @@ section.letters {
     color: #813DC4;
 }
 
+@keyframes hover {
+    0% {
+        font-size: 20px;
+    }
+
+    100% {
+        font-size: 1;
+    }
+}
+
 footer {
     width: 800px;
     margin: 0 auto;
@@ -477,4 +468,5 @@ footer {
 
 a:hover {
     color: #813DC4;
+    animation: hover 250ms ease-in;
 }
