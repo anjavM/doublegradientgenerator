@@ -1,0 +1,5 @@
+node_modules/*
+.sass-cache/*
+debug.log
+js/jquery-rotate-min.js
+js/jquery-rotate.js

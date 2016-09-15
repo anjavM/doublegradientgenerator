@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Double Gradient Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="colorpicker/dist/css/bootstrap-colorpicker.css"/>
+    <script src="jquery/jquery.js"></script>
+    <script src="colorpicker/dist/js/bootstrap-colorpicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script src="js/jquery-rotate.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <header class="title">
+        <p>Double gradient generator</p>
+    </header>
+
+    <section class="colors">
+        <div class="container">
+            <header>
+                <h1>Now you can easily create a double-colored gradient for your website!</h1>
+                <p>Just pick two colors, choose your gradient's direction and style, let the generator do its magic and copy the code.</p>
+            </header>
+
+            <div class="colorpickers">
+                <div class="color-one">
+                    <h2><i class="fa fa-eyedropper" aria-hidden="true"></i> first color</h2>
+                    <form>
+                        <label>
+                            <span class="color">HEX/RGB/RGBA</a><input type="text" name="color"><br>
+                        </label>
+                        <!-- <label>
+                            <span class="color">RGB</a><input type="text" name="color">
+                        </label> -->
+                    </form>
+                </div>
+
+                <i class="fa fa-exchange" aria-hidden="true"></i>
+
+                <div class="color-two">
+                    <h2><i class="fa fa-eyedropper" aria-hidden="true"></i> second color</h2>
+                    <form>
+                        <label>
+                            <span class="color">HEX/RGB/RGBA</a><input type="text" name="color"><br>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customize">
+        <header class="custom-header">
+            <h1>Customize your gradient</h1>
+        </header>
+
+    <div class="container">
+        <div class="properties">
+            <div class="style">
+                <h2>direction</h2>
+                <form>
+                    <label>
+                        <input type="radio" name="style" value="linear">
+                        <span class="label-text"><i class="fa fa-arrow-up" aria-hidden="true"></i> Horizontal</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="style" value="vertical">
+                        <span class="label-text"><i class="fa fa-arrow-right" aria-hidden="true"></i> Vertical</span>
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="style" value="diagonal-up-left">
+                        <span class="label-text"><i class="fa fa-arrow-up" aria-hidden="true"></i> Diagonal</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="style" value="diagonal-up-right">
+                        <span class="label-text"><i class="fa fa-arrow-up" aria-hidden="true"></i> Diagonal</span>
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="style" value="diagonal-down-left">
+                        <span class="label-text"><i class="fa fa-arrow-up" aria-hidden="true"></i> Diagonal</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="style" value="diagonal-down-right">
+                        <span class="label-text"><i class="fa fa-arrow-up" aria-hidden="true"></i> Diagonal</span>
+                    </label><br>
+
+                    <label>
+                            <input type="radio" name="style" value="radial">
+                            <span class="label-text">Radial</span>
+                    </label>
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="preview">
+                <h2>Preview</h2>
+                <div class="previewgradient"></div>
+                <label>
+                    <input type="checkbox" name="repeat" value="repeat">
+                    <span class="label-text"></i> Repeating</span>
+                </label>
+        </div>
+    </section>
+
+    <section class="copycode">
+            <h2>Get the code</h2>
+            <div class="gethecode">
+                <p class="code" data-clipboard-target=".code"></p>
+            </div>
+            <div class="copied"></div>
+    </section>
+
+    <section class="letters">
+        <div class="container">
+            <h2>Give your text a gradient</h2>
+            <label>Type here: <input type="text" class="typetext">
+            </label>
+
+            <label>Font size: <input type="text" class="fontsize" value="60"></label>
+
+            <h2>Preview</h2>
+            <p class="alert">(Max font size for preview: 80px)</p>
+            <div class="text-preview" maxlength="100"><p></p></div>
+
+            <h2>Get the code</h2>
+            <div class="gethetextcode">
+                <p class="textcode" data-clipboard-target=".textcode"></p>
+            </div>
+            <div class="text-copied"></div>
+        </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>©2016 Created by a anjavM</p>
+        <p>Visit my <a href="https://github.com/anjavM" target="_blank">GitHub</a> for other projects</p>
+    </footer>
+</body>
+
+</html>
